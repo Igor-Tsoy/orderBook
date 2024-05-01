@@ -1,9 +1,10 @@
-import { createStore } from "vuex";
+import Vuex from 'vuex';
+import settings from './modules/settings';
+import orderBook from './modules/orderBook';
 
-export default createStore({
-  state: {},
-  getters: {},
-  mutations: {},
-  actions: {},
-  modules: {},
+export default new Vuex.Store({
+  modules: {
+    settings,
+    orderBook,
+  },
 });
